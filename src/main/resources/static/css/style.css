@@ -5,17 +5,18 @@
 	letter-spacing: 0.25rem;
 }
 
-#container {
+#main {
 	width: 100%;
-	height: 2500px;
-	background-color: navy;
-	padding: 150px;
+
+	background-color: #42dcf4;
+	padding: 5rem;
 	color: white;
+	text-align: center;
 }
 
 .navbar-brand {
 	margin-right: 2rem;
-	font-size: 3rem;
+	font-size: 2.5rem;
 }
 
 .connect {
@@ -27,3 +28,83 @@
 	padding: 8px;
 	
 }
+
+#profile_pic {
+	width: 25rem;
+	border-radius: 25px;
+	margin-bottom: 3rem;
+}
+
+#main h1 {
+	font-family: 'Fredoka One', cursive;
+	font-size: 4.5rem;
+}
+
+#main h3 {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+#about {
+	width: 100%;
+	padding: 2rem 5rem;
+	text-align: center;
+}
+
+#about h2 {
+	font-family: 'Fredoka One', cursive;
+	margin-bottom: 2.5rem;
+}
+
+#about-wrapper {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 2rem;
+}
+
+.about-content {
+	width: 30%;
+	font-family: 'Ubuntu', sans-serif;
+	text-align: left;
+}
+
+#skill-box {
+	width: 100%;
+	height: 100px;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	margin-bottom: 2rem;
+}
+
+.skills {
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	padding: 3px;
+}
+
+#projects {
+	width: 100%;
+	height: 550px;
+	background-color: #3cfca1;
+	color: white;
+	padding: 2rem 5rem;
+	text-align: center;
+	
+}
+
+#projects h2 {
+	font-family: 'Fredoka One', cursive;
+	margin-bottom: 2.5rem;
+}
+
+#contact {
+	width: 100%;
+	height: 550px;
+	background-color: #353a40;
+	color: white;
+	padding: 2rem 5rem;
+	text-align: center;
+	
+}
+
