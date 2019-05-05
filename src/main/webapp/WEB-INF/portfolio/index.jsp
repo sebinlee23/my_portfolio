@@ -102,11 +102,13 @@
 		<div id="about">
 			<h2>ABOUT</h2>
 			<div id="about-wrapper">
-				<div class="about-content">
-					<p>I am a diligent full stack developer with an experience of creating and deploying web applications using Python, Javascript, and Java. My previous experience in news production has taught me how to have strong attention to detail, the importance of teamwork and clear communication which I believe can be very useful when it comes to developing web applications.</p>
+				<div class="about-content" id="about-text">
+					<p>I am a diligent full stack developer with an experience of creating and deploying web applications using Python, Javascript, and Java. My <span class="highlight">previous experience in news production</span> has taught me how to have strong attention to detail, the importance of teamwork and clear communication which I believe can be very useful when it comes to developing web applications.</p>
+					<br>
+					<p>I am very excited for the journey ahead of me as a web developer, and I hope <span class="highlight">my passion for programming</span> can lead me to an opportunity where I can solve unique and interesting problems with my technical abilities</p>
 				</div>
 				<div class="about-content">
-					<p>I am a diligent full stack developer with an experience of creating and deploying web applications using Python, Javascript, and Java. My previous experience in news production has taught me how to have strong attention to detail, the importance of teamwork, and clear communication which I believe can be very useful when it comes to developing web applications.</p>
+					<img id="broadcast" src="/images/broadcast.jpg" alt="broadcast image">
 				</div>
 			</div>
 			<h2>SKILLS</h2>
@@ -135,7 +137,6 @@
 			<h2>PROJECTS</h2>
 			
 		</div>
-		
 		<div id="contact">
 			<h2>CONTACT ME</h2>
 			<div id="message">

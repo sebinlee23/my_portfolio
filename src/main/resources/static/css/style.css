@@ -66,14 +66,27 @@
 
 #about-wrapper {
 	display: flex;
-	justify-content: space-evenly;
-	margin-bottom: 2rem;
+	justify-content: center;
+	margin-bottom: 4rem;
 }
 
 .about-content {
 	width: 30%;
 	font-family: 'Ubuntu', sans-serif;
 	text-align: left;
+}
+
+#about-text {
+	margin-right: 2.5rem;
+}
+#broadcast {
+	width: 100%;
+	border-radius: 25px;
+	margin-left: 2.5rem;
+}
+
+.highlight {
+	color: #42dcf4;
 }
 
 #skill-box {
@@ -161,4 +174,26 @@
 	width: 48%;
 }
 
+@media only screen and (max-width: 1200px) {
+	
+	#about-wrapper {
+	display: block;
+	text-align:center;
+	}
 
+	.about-content {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	}
+
+	#about-text {
+	margin-right: auto;
+	}
+	
+	#broadcast {
+	width: 60%;
+	margin-left: auto;
+	}
+	
+}
