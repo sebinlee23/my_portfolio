@@ -63,6 +63,33 @@
 				
 				$('.resume').tooltip();
 				
+				
+				$('#truegrit').hover(function(){
+	                $('#truegrit').attr('src','/images/truegrit2.png');
+	            }, function() {
+	                $('#truegrit').attr('src', '/images/truegrit.png');
+	            });
+				
+				$('#choices').hover(function(){
+	                $('#choices').attr('src','/images/choices2.png');
+	            }, function() {
+	                $('#choices').attr('src', '/images/choices1.png');
+	            });
+				
+				$(document).ready(function(){
+				    $('.modal').each(function(){
+				            var src = $(this).find('iframe').attr('src');
+
+				        $(this).on('click', function(){
+
+				            $(this).find('iframe').attr('src', '');
+				            $(this).find('iframe').attr('src', src);
+
+				        });
+				    });
+				});
+				
+				
 			});
 		</script>
 	</head>
@@ -135,7 +162,29 @@
 		</div>
 		<div id="projects">
 			<h2>PROJECTS</h2>
-			
+			<div class="project-wrapper">
+				<img class="project-pic" id="truegrit" src="/images/truegrit.png" alt="my project screenshot">
+				<div class="project-desc">
+					<h3>True Grit</h3>
+					<p>Created an app that features Login and Registration with validations, displays the logged user's order history and its status. Also displays user’s subscription plan. The subscription plan is specific to user. User can cancel one’s plan or change it to a different one. User can place individual orders without enrolling into subscription plans and check the status. The data is stored and retrieved from MySQL Database, which has 5 models </p>
+					<h4>Technologies Used</h4>
+					<p>Python, Django, MySQL, HTML5, CSS3, Bootstrap, AJAX, Bcrypt</p>
+					<br>
+					<button type="button" class="btn btn-dark" data-toggle="modal" data-target=".bd-example-modal-lg-1">Learn More</button>
+				</div>
+			</div>
+			<div class="project-wrapper">
+				<img class="project-pic" id="choices" src="/images/choices1.png" alt="my project screenshot">
+				<div class="project-desc">
+					<h3>Choices</h3>
+					<p>Created an Angular app which incorporates Socket.io where user can interact with other users in real time making a choice between given options. Users can also chat in real time sharing their thoughts on their choices while waiting for others to make decisions. Votes are also shown in real time in a graphical bar to show which option has more choices from users. </p>
+					<h4>Technologies Used</h4>
+					<p>Angular JS, MongoDB, HTML5, CSS3, Bootstrap, Node.js, Socket.io</p>
+					<br>
+					<button type="button" class="btn btn-dark" data-toggle="modal" data-target=".bd-example-modal-lg-2">Learn More</button>
+				</div>
+			</div>
+
 		</div>
 		<div id="contact">
 			<h2>CONTACT ME</h2>
@@ -167,7 +216,44 @@
 			<h6>Copyright &#169; 2019 Designed and developed by Sebin Lee</h6>
 		</div>
 		<div id="scroll-contact"></div>
-		
+		<!-- Modal -->
+		<div class="modal fade bd-example-modal-lg-1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLongTitle">True Grit Demo</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <iframe width="100%" height="415" src="https://www.youtube.com/embed/0G-E8gLgTww" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- Modal2 -->
+		<div class="modal fade bd-example-modal-lg-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLongTitle">Choices Demo</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <iframe width="100%" height="415" src="https://www.youtube.com/embed/nKRJLS88W64" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>		
 		
 	</body>
 </html>
